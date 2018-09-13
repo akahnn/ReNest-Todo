@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DE4BBF1C223EB216B48A96C /* Pods_ReNest_TodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6D8864FA2229F60725E622 /* Pods_ReNest_TodoTests.framework */; };
+		259F16A8D3D6FA3960034F69 /* Pods_ReNest_TodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB7C953B0FC2710A59B733C /* Pods_ReNest_TodoUITests.framework */; };
+		284B55592148BC6C0050F703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B55582148BC6C0050F703 /* AppDelegate.swift */; };
+		284B555E2148BC6C0050F703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284B555C2148BC6C0050F703 /* Main.storyboard */; };
+		284B55612148BC6C0050F703 /* ReNest_Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 284B555F2148BC6C0050F703 /* ReNest_Todo.xcdatamodeld */; };
+		284B55632148BC6D0050F703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284B55622148BC6D0050F703 /* Assets.xcassets */; };
+		284B55662148BC6D0050F703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284B55642148BC6D0050F703 /* LaunchScreen.storyboard */; };
+		284B55712148BC6D0050F703 /* ReNest_TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B55702148BC6D0050F703 /* ReNest_TodoTests.swift */; };
+		284B557C2148BC6D0050F703 /* ReNest_TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B557B2148BC6D0050F703 /* ReNest_TodoUITests.swift */; };
+		284B558A2148BCD40050F703 /* AllTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B55892148BCD40050F703 /* AllTasksViewController.swift */; };
+		284B558F2148BFE00050F703 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B558D2148BFE00050F703 /* TaskCell.swift */; };
+		284B55902148BFE00050F703 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284B558E2148BFE00050F703 /* TaskCell.xib */; };
+		284B55952148C2820050F703 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B55942148C2820050F703 /* UIColor+AppColors.swift */; };
+		284B559D21499F170050F703 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B559C21499F170050F703 /* CoreDataStack.swift */; };
+		284B559F2149A4DB0050F703 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B559E2149A4DB0050F703 /* AddTaskViewController.swift */; };
+		284B55A22149A5130050F703 /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B55A02149A5130050F703 /* AddTaskCell.swift */; };
+		284B55A32149A5130050F703 /* AddTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284B55A12149A5130050F703 /* AddTaskCell.xib */; };
+		28BCE82A214ACAD700F09545 /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 28BCE829214ACAD700F09545 /* Avenir.ttc */; };
+		28BCE834214B15E200F09545 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCE833214B15E200F09545 /* Extensions.swift */; };
+		373D9E618234BDE60CA4344C /* Pods_ReNest_Todo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF753CA13AA4BDE599479E0 /* Pods_ReNest_Todo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		284B556D2148BC6D0050F703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284B554D2148BC6C0050F703 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 284B55542148BC6C0050F703;
+			remoteInfo = "ReNest-Todo";
+		};
+		284B55782148BC6D0050F703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284B554D2148BC6C0050F703 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 284B55542148BC6C0050F703;
+			remoteInfo = "ReNest-Todo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		284B55552148BC6C0050F703 /* ReNest-Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReNest-Todo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		284B55582148BC6C0050F703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		284B555D2148BC6C0050F703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		284B55602148BC6C0050F703 /* ReNest_Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReNest_Todo.xcdatamodel; sourceTree = "<group>"; };
+		284B55622148BC6D0050F703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		284B55652148BC6D0050F703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		284B55672148BC6D0050F703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284B556C2148BC6D0050F703 /* ReNest-TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReNest-TodoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		284B55702148BC6D0050F703 /* ReNest_TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReNest_TodoTests.swift; sourceTree = "<group>"; };
+		284B55722148BC6D0050F703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284B55772148BC6D0050F703 /* ReNest-TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReNest-TodoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		284B557B2148BC6D0050F703 /* ReNest_TodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReNest_TodoUITests.swift; sourceTree = "<group>"; };
+		284B557D2148BC6D0050F703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284B55892148BCD40050F703 /* AllTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksViewController.swift; sourceTree = "<group>"; };
+		284B558D2148BFE00050F703 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		284B558E2148BFE00050F703 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		284B55942148C2820050F703 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		284B559C21499F170050F703 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		284B559E2149A4DB0050F703 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		284B55A02149A5130050F703 /* AddTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCell.swift; sourceTree = "<group>"; };
+		284B55A12149A5130050F703 /* AddTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskCell.xib; sourceTree = "<group>"; };
+		28BCE829214ACAD700F09545 /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
+		28BCE833214B15E200F09545 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2AA35A479FD6F6A6CE5577CF /* Pods-ReNest-Todo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-Todo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo.release.xcconfig"; sourceTree = "<group>"; };
+		3E5D0F33C44812A64A07ABBA /* Pods-ReNest-TodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-TodoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-TodoTests/Pods-ReNest-TodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D6D8864FA2229F60725E622 /* Pods_ReNest_TodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReNest_TodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		683BE483BECEA1E543768474 /* Pods-ReNest-Todo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-Todo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB7C953B0FC2710A59B733C /* Pods_ReNest_TodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReNest_TodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF753CA13AA4BDE599479E0 /* Pods_ReNest_Todo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReNest_Todo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F93C555A0F60CDEA2057A2C /* Pods-ReNest-TodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-TodoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-TodoUITests/Pods-ReNest-TodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A08C9FCB1D0614A0437601AD /* Pods-ReNest-TodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-TodoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-TodoUITests/Pods-ReNest-TodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8FB06DA1E2FFB02BCA0CC9B /* Pods-ReNest-TodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-TodoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-TodoTests/Pods-ReNest-TodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		284B55522148BC6C0050F703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373D9E618234BDE60CA4344C /* Pods_ReNest_Todo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284B55692148BC6D0050F703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE4BBF1C223EB216B48A96C /* Pods_ReNest_TodoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284B55742148BC6D0050F703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259F16A8D3D6FA3960034F69 /* Pods_ReNest_TodoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		284B554C2148BC6C0050F703 = {
+			isa = PBXGroup;
+			children = (
+				284B55572148BC6C0050F703 /* ReNest-Todo */,
+				284B556F2148BC6D0050F703 /* ReNest-TodoTests */,
+				284B557A2148BC6D0050F703 /* ReNest-TodoUITests */,
+				284B55562148BC6C0050F703 /* Products */,
+				777CA98E417E246FC8E5931E /* Pods */,
+				A96452F6A0ADD9934244302C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		284B55562148BC6C0050F703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				284B55552148BC6C0050F703 /* ReNest-Todo.app */,
+				284B556C2148BC6D0050F703 /* ReNest-TodoTests.xctest */,
+				284B55772148BC6D0050F703 /* ReNest-TodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		284B55572148BC6C0050F703 /* ReNest-Todo */ = {
+			isa = PBXGroup;
+			children = (
+				284B55582148BC6C0050F703 /* AppDelegate.swift */,
+				28BCE832214B0EC300F09545 /* Storyboard */,
+				28BCE82F214B0E2700F09545 /* ViewController */,
+				28BCE830214B0E5400F09545 /* Cell */,
+				284B55A9214A1FB70050F703 /* Data */,
+				28BCE835214B172500F09545 /* Helpers */,
+				28BCE831214B0E9900F09545 /* Resources */,
+				284B55622148BC6D0050F703 /* Assets.xcassets */,
+				284B55642148BC6D0050F703 /* LaunchScreen.storyboard */,
+				284B55672148BC6D0050F703 /* Info.plist */,
+			);
+			path = "ReNest-Todo";
+			sourceTree = "<group>";
+		};
+		284B556F2148BC6D0050F703 /* ReNest-TodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				284B55702148BC6D0050F703 /* ReNest_TodoTests.swift */,
+				284B55722148BC6D0050F703 /* Info.plist */,
+			);
+			path = "ReNest-TodoTests";
+			sourceTree = "<group>";
+		};
+		284B557A2148BC6D0050F703 /* ReNest-TodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				284B557B2148BC6D0050F703 /* ReNest_TodoUITests.swift */,
+				284B557D2148BC6D0050F703 /* Info.plist */,
+			);
+			path = "ReNest-TodoUITests";
+			sourceTree = "<group>";
+		};
+		284B55912148BFE90050F703 /* TaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				284B558D2148BFE00050F703 /* TaskCell.swift */,
+				284B558E2148BFE00050F703 /* TaskCell.xib */,
+			);
+			path = TaskCell;
+			sourceTree = "<group>";
+		};
+		284B55A42149A5180050F703 /* AddTaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				284B55A02149A5130050F703 /* AddTaskCell.swift */,
+				284B55A12149A5130050F703 /* AddTaskCell.xib */,
+			);
+			path = AddTaskCell;
+			sourceTree = "<group>";
+		};
+		284B55A9214A1FB70050F703 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				284B559C21499F170050F703 /* CoreDataStack.swift */,
+				284B555F2148BC6C0050F703 /* ReNest_Todo.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		28BCE82F214B0E2700F09545 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				284B55892148BCD40050F703 /* AllTasksViewController.swift */,
+				284B559E2149A4DB0050F703 /* AddTaskViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		28BCE830214B0E5400F09545 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				284B55A42149A5180050F703 /* AddTaskCell */,
+				284B55912148BFE90050F703 /* TaskCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		28BCE831214B0E9900F09545 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28BCE829214ACAD700F09545 /* Avenir.ttc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28BCE832214B0EC300F09545 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				284B555C2148BC6C0050F703 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		28BCE835214B172500F09545 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				284B55942148C2820050F703 /* UIColor+AppColors.swift */,
+				28BCE833214B15E200F09545 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		777CA98E417E246FC8E5931E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				683BE483BECEA1E543768474 /* Pods-ReNest-Todo.debug.xcconfig */,
+				2AA35A479FD6F6A6CE5577CF /* Pods-ReNest-Todo.release.xcconfig */,
+				F8FB06DA1E2FFB02BCA0CC9B /* Pods-ReNest-TodoTests.debug.xcconfig */,
+				3E5D0F33C44812A64A07ABBA /* Pods-ReNest-TodoTests.release.xcconfig */,
+				A08C9FCB1D0614A0437601AD /* Pods-ReNest-TodoUITests.debug.xcconfig */,
+				6F93C555A0F60CDEA2057A2C /* Pods-ReNest-TodoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A96452F6A0ADD9934244302C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EF753CA13AA4BDE599479E0 /* Pods_ReNest_Todo.framework */,
+				5D6D8864FA2229F60725E622 /* Pods_ReNest_TodoTests.framework */,
+				6BB7C953B0FC2710A59B733C /* Pods_ReNest_TodoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		284B55542148BC6C0050F703 /* ReNest-Todo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284B55802148BC6D0050F703 /* Build configuration list for PBXNativeTarget "ReNest-Todo" */;
+			buildPhases = (
+				27F05865ED2022B41AC39B44 /* [CP] Check Pods Manifest.lock */,
+				284B55512148BC6C0050F703 /* Sources */,
+				284B55522148BC6C0050F703 /* Frameworks */,
+				284B55532148BC6C0050F703 /* Resources */,
+				49D5B0D807F1AECE7047E67C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReNest-Todo";
+			productName = "ReNest-Todo";
+			productReference = 284B55552148BC6C0050F703 /* ReNest-Todo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		284B556B2148BC6D0050F703 /* ReNest-TodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284B55832148BC6D0050F703 /* Build configuration list for PBXNativeTarget "ReNest-TodoTests" */;
+			buildPhases = (
+				A223AFB9F5BD5506857A54C0 /* [CP] Check Pods Manifest.lock */,
+				284B55682148BC6D0050F703 /* Sources */,
+				284B55692148BC6D0050F703 /* Frameworks */,
+				284B556A2148BC6D0050F703 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				284B556E2148BC6D0050F703 /* PBXTargetDependency */,
+			);
+			name = "ReNest-TodoTests";
+			productName = "ReNest-TodoTests";
+			productReference = 284B556C2148BC6D0050F703 /* ReNest-TodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		284B55762148BC6D0050F703 /* ReNest-TodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 284B55862148BC6D0050F703 /* Build configuration list for PBXNativeTarget "ReNest-TodoUITests" */;
+			buildPhases = (
+				E8A1B3A04FD73F70D84CCD3E /* [CP] Check Pods Manifest.lock */,
+				284B55732148BC6D0050F703 /* Sources */,
+				284B55742148BC6D0050F703 /* Frameworks */,
+				284B55752148BC6D0050F703 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				284B55792148BC6D0050F703 /* PBXTargetDependency */,
+			);
+			name = "ReNest-TodoUITests";
+			productName = "ReNest-TodoUITests";
+			productReference = 284B55772148BC6D0050F703 /* ReNest-TodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		284B554D2148BC6C0050F703 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Sifted;
+				TargetAttributes = {
+					284B55542148BC6C0050F703 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					284B556B2148BC6D0050F703 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 284B55542148BC6C0050F703;
+					};
+					284B55762148BC6D0050F703 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 284B55542148BC6C0050F703;
+					};
+				};
+			};
+			buildConfigurationList = 284B55502148BC6C0050F703 /* Build configuration list for PBXProject "ReNest-Todo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 284B554C2148BC6C0050F703;
+			productRefGroup = 284B55562148BC6C0050F703 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				284B55542148BC6C0050F703 /* ReNest-Todo */,
+				284B556B2148BC6D0050F703 /* ReNest-TodoTests */,
+				284B55762148BC6D0050F703 /* ReNest-TodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		284B55532148BC6C0050F703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284B55902148BFE00050F703 /* TaskCell.xib in Resources */,
+				284B55A32149A5130050F703 /* AddTaskCell.xib in Resources */,
+				28BCE82A214ACAD700F09545 /* Avenir.ttc in Resources */,
+				284B55662148BC6D0050F703 /* LaunchScreen.storyboard in Resources */,
+				284B55632148BC6D0050F703 /* Assets.xcassets in Resources */,
+				284B555E2148BC6C0050F703 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284B556A2148BC6D0050F703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284B55752148BC6D0050F703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27F05865ED2022B41AC39B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReNest-Todo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D5B0D807F1AECE7047E67C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A223AFB9F5BD5506857A54C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReNest-TodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A1B3A04FD73F70D84CCD3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReNest-TodoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		284B55512148BC6C0050F703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284B55A22149A5130050F703 /* AddTaskCell.swift in Sources */,
+				28BCE834214B15E200F09545 /* Extensions.swift in Sources */,
+				284B559D21499F170050F703 /* CoreDataStack.swift in Sources */,
+				284B55592148BC6C0050F703 /* AppDelegate.swift in Sources */,
+				284B55612148BC6C0050F703 /* ReNest_Todo.xcdatamodeld in Sources */,
+				284B558A2148BCD40050F703 /* AllTasksViewController.swift in Sources */,
+				284B55952148C2820050F703 /* UIColor+AppColors.swift in Sources */,
+				284B558F2148BFE00050F703 /* TaskCell.swift in Sources */,
+				284B559F2149A4DB0050F703 /* AddTaskViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284B55682148BC6D0050F703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284B55712148BC6D0050F703 /* ReNest_TodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284B55732148BC6D0050F703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284B557C2148BC6D0050F703 /* ReNest_TodoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		284B556E2148BC6D0050F703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 284B55542148BC6C0050F703 /* ReNest-Todo */;
+			targetProxy = 284B556D2148BC6D0050F703 /* PBXContainerItemProxy */;
+		};
+		284B55792148BC6D0050F703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 284B55542148BC6C0050F703 /* ReNest-Todo */;
+			targetProxy = 284B55782148BC6D0050F703 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		284B555C2148BC6C0050F703 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				284B555D2148BC6C0050F703 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		284B55642148BC6D0050F703 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				284B55652148BC6D0050F703 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		284B557E2148BC6D0050F703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		284B557F2148BC6D0050F703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		284B55812148BC6D0050F703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 683BE483BECEA1E543768474 /* Pods-ReNest-Todo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 793JUMAQ63;
+				INFOPLIST_FILE = "ReNest-Todo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-Todo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		284B55822148BC6D0050F703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA35A479FD6F6A6CE5577CF /* Pods-ReNest-Todo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 793JUMAQ63;
+				INFOPLIST_FILE = "ReNest-Todo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-Todo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		284B55842148BC6D0050F703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FB06DA1E2FFB02BCA0CC9B /* Pods-ReNest-TodoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReNest-TodoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-TodoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReNest-Todo.app/ReNest-Todo";
+			};
+			name = Debug;
+		};
+		284B55852148BC6D0050F703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5D0F33C44812A64A07ABBA /* Pods-ReNest-TodoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReNest-TodoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-TodoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReNest-Todo.app/ReNest-Todo";
+			};
+			name = Release;
+		};
+		284B55872148BC6D0050F703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08C9FCB1D0614A0437601AD /* Pods-ReNest-TodoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReNest-TodoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-TodoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReNest-Todo";
+			};
+			name = Debug;
+		};
+		284B55882148BC6D0050F703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F93C555A0F60CDEA2057A2C /* Pods-ReNest-TodoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReNest-TodoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-TodoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReNest-Todo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		284B55502148BC6C0050F703 /* Build configuration list for PBXProject "ReNest-Todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284B557E2148BC6D0050F703 /* Debug */,
+				284B557F2148BC6D0050F703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284B55802148BC6D0050F703 /* Build configuration list for PBXNativeTarget "ReNest-Todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284B55812148BC6D0050F703 /* Debug */,
+				284B55822148BC6D0050F703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284B55832148BC6D0050F703 /* Build configuration list for PBXNativeTarget "ReNest-TodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284B55842148BC6D0050F703 /* Debug */,
+				284B55852148BC6D0050F703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		284B55862148BC6D0050F703 /* Build configuration list for PBXNativeTarget "ReNest-TodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284B55872148BC6D0050F703 /* Debug */,
+				284B55882148BC6D0050F703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		284B555F2148BC6C0050F703 /* ReNest_Todo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				284B55602148BC6C0050F703 /* ReNest_Todo.xcdatamodel */,
+			);
+			currentVersion = 284B55602148BC6C0050F703 /* ReNest_Todo.xcdatamodel */;
+			path = ReNest_Todo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 284B554D2148BC6C0050F703 /* Project object */;
+}

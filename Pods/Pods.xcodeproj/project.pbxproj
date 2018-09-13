@@ -1,0 +1,1252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0002884C4C5BD3C3237AF1D3B8A27E2D /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7EC7766C3C224C8826B2B8D05FBBA /* DesignableImageView.swift */; };
+		059CCCCA12922699B234A956E98331A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0C0E6AE580674608645C28E718A99470 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0B6EB4FD12C4AA63EAE693CE87025A /* LoadingView.xib */; };
+		0CB463DF9E2143345D89BD8861BB0883 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E4C4C88EC0375893A7CBD0C706475 /* SwiftHEXColors.swift */; };
+		1004129DE52FEE0E429B0AEF794E07FF /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883C7C131C3210FE809E866ABE21CB12 /* DesignableTextView.swift */; };
+		120A6384C2A1AC9DF17FFE5C127F6CA9 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B32EADD0901039D1A79EA91263CD75 /* DesignableButton.swift */; };
+		170B37C9B1E790E152B660C30704FA57 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0B544D1178645E9111310218E4F3C /* AsyncImageView.swift */; };
+		224E63CFCB9A767D3CBDCAE859C859B6 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3416C960FCD3DC2FD699918172625 /* AsyncButton.swift */; };
+		23FCA06A866CBC6A2CCFFD38AE8BB012 /* Pods-ReNest-TodoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 376A1AC5139A891D2F9A8948D9667E3D /* Pods-ReNest-TodoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3514DDA8C8F6F22909F1C22E1BDB189C /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3B3AAF308BE20B1FC6703B809633AB /* Spring-dummy.m */; };
+		3552D723A10F0C1922A6EB1D85A01E87 /* Pods-ReNest-TodoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03563495B3BBCD824E400FE74CF66836 /* Pods-ReNest-TodoTests-dummy.m */; };
+		355A40385F438A454BA7A3F5CD1ABAEA /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD5E5491B96D8D86985580382E850D /* SpringImageView.swift */; };
+		3D1540604F47F1547031F2B6705D290D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303B5532A7EDB41B0A2D2903F520F32 /* LoadingView.swift */; };
+		4193CF16A59A0CD8D0B720ACF185B88E /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874BD10E4ADFFC0F4CBBFB1D7F34215A /* TransitionZoom.swift */; };
+		4410062E678BC4BB65B856BDFADFD44E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A1C4CDAA2A7ED432F76158EBA768DA /* BlurView.swift */; };
+		48EFA9D1BA25544C15650AAE312BD0B5 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF863E767F20B81012808DE8E0FE8795 /* DesignableLabel.swift */; };
+		4BD50CA86CBE5BFCF0D256DDE34E2499 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6B6D635C3C71B3192C57E69A4D4442 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D938162F88B7F225EBB65D68793B266 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B563FB69CC62A8428918A0173E6478 /* SoundPlayer.swift */; };
+		54540C19320EC5D9CAB00EA85968B617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5644F3BB583E6715E998EE72DA7F974C /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B670D0FCFFE89C1EA72B1B80349F74E /* SpringTextField.swift */; };
+		569920E706A0C31AB333F92607B4A760 /* Pods-ReNest-Todo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0999236FEC4CAD910B8EA77F6FC3623 /* Pods-ReNest-Todo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		571713DE1B9FB81A3BCB9567CC65E2BC /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E477028B2A0F34791B2B167425EEF /* SpringAnimation.swift */; };
+		62A7951F998866136CA82C1B6C6F283A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D47293A0DA1D570BB0E18AB422C30A /* Misc.swift */; };
+		659F89A2146EB9C0ECE692EC32F4AB82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7AC1A75D75467132E0095F405EC48D13 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF4779DFF8976FDBA9DE6F23A3CB8FB /* ImageLoader.swift */; };
+		81F72C042B497B6AE8E2B5373C9DA57F /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD56289C8DE2A495762472E741FC2B /* SpringButton.swift */; };
+		8B26238039845CDC46FB69B5B5578EE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6949F2F159D7B78F33CC72B45762D0 /* Images.xcassets */; };
+		A4DC6DDE7BD1F0EB061CB809735E0A57 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB796D61ECE80DEE7B78EA5AD311B0 /* SpringTextView.swift */; };
+		A66C853F6216F15EE9F7D086EBC54329 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F3D29DB3EA5C80BABD320BCA0A228A /* SwiftHEXColors-dummy.m */; };
+		ABA3FB79866536180798BAE6437CB5C5 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588CB14E55002ACA5DBEE3B96238581 /* DesignableTabBarController.swift */; };
+		AD3023E3DAB89BE02C5E5D5631607336 /* Pods-ReNest-Todo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F530CDBBDE1B5754EE2E613F731253FE /* Pods-ReNest-Todo-dummy.m */; };
+		B54F361617FEF79A150E570D828A4B9D /* Pods-ReNest-TodoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2278EF3C450E8B328E1AB194CE2ECDEA /* Pods-ReNest-TodoUITests-dummy.m */; };
+		BA96683C57350FE48515234B0F7A7064 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		BA99227D855B03663E9C692C83F6E07D /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB28387D490D68DFC82C6047A62281 /* AutoTextView.swift */; };
+		BCA144F66425277AF0CFD2C7575C9A62 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59CC6F3B33F94D5F76A8ECC0D4C0E1 /* Spring.swift */; };
+		BFA6FADBF57EFCB2789AB5823E3D1E73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C3724188B414E8B9DC3AB6D5F60830E6 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DC668CF7C4584715BDB9AA27B15F7 /* DesignableView.swift */; };
+		C39A708988E1CC53E6DF7544644A11B3 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC389B7822DB805D6FDD8F016B1F0EEA /* TransitionManager.swift */; };
+		CE4F3E51F731C44AC09E5A54E356C09C /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55FA57D12AC749563E0C821D63E65D8 /* SpringView.swift */; };
+		CFEF569BC9E915A48E78D1A7E32602FE /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D62D47F2901C9BEFB4DA9D8D489518C /* DesignableTextField.swift */; };
+		D301A150EC84C610C92D9AD20FA3BAE0 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BD5ED0EB90814FCA67412C1E2AE5AD /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E3434B6C95B4BC8177D4939515E1D7 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA97F6E17D27400774758EF4BE0427 /* KeyboardLayoutConstraint.swift */; };
+		DB70E4D10449FCC4F6731EBD57FAE606 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7037D0366E140E1A80B4688A62E48B /* SpringLabel.swift */; };
+		E746A8B33BC05FF61FC154D6BF979CA0 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84AC9C17138AB8CF32A31DCE40B4E5E /* UnwindSegue.swift */; };
+		FA05614431D16A9F0FD132D8666F0CDD /* Pods-ReNest-TodoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CF9B2A0DF059EA25E97D357DE4BBC /* Pods-ReNest-TodoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFA176A238CE850EC79A85C2D41C956 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4336054EDE2A4352310DAB58717D70E8 /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0947416198CC3A604D5286916FAAF1A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF3CFD7A36A3D362AA67A4EABF706905;
+			remoteInfo = SwiftHEXColors;
+		};
+		5ADB4286E11AC8B79A1F3BADFAEE2B7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A11A309C18EE5AC7F4893AFC27102DA3;
+			remoteInfo = Spring;
+		};
+		AAF0381D04536D0D94F06AE38D18CBD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E93466445061B963E50F080A231A73;
+			remoteInfo = "Pods-ReNest-Todo";
+		};
+		C7DBEC7B4CE9FF8C97FF2A77F2E5592C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E93466445061B963E50F080A231A73;
+			remoteInfo = "Pods-ReNest-Todo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0257C5AB43135E31FE7236A2E3A8D03C /* Pods-ReNest-TodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReNest-TodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		03563495B3BBCD824E400FE74CF66836 /* Pods-ReNest-TodoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReNest-TodoTests-dummy.m"; sourceTree = "<group>"; };
+		0801B8CCF123FFEEEE984A8B39A3AC58 /* Pods-ReNest-TodoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReNest-TodoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0D62D47F2901C9BEFB4DA9D8D489518C /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
+		17F1BE3E8905DAA9B24A396C27393CF5 /* Pods-ReNest-TodoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ReNest-TodoTests.modulemap"; sourceTree = "<group>"; };
+		1B670D0FCFFE89C1EA72B1B80349F74E /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
+		1C3B3AAF308BE20B1FC6703B809633AB /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
+		1F66A713D3AF480880592F10F610E642 /* Pods-ReNest-Todo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReNest-Todo.release.xcconfig"; sourceTree = "<group>"; };
+		2278EF3C450E8B328E1AB194CE2ECDEA /* Pods-ReNest-TodoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReNest-TodoUITests-dummy.m"; sourceTree = "<group>"; };
+		2303B5532A7EDB41B0A2D2903F520F32 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
+		248740559BDE5033E3E56647430F9250 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
+		2B233F744EE921B99C1C0A43DD7F78C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA3416C960FCD3DC2FD699918172625 /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
+		3423A7B71E655063A28872A2584B27F8 /* Pods-ReNest-TodoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReNest-TodoTests-resources.sh"; sourceTree = "<group>"; };
+		376A1AC5139A891D2F9A8948D9667E3D /* Pods-ReNest-TodoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReNest-TodoTests-umbrella.h"; sourceTree = "<group>"; };
+		3C3CD022E1E93BC2674F0D720B52DDEC /* Pods-ReNest-TodoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReNest-TodoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		41FB28387D490D68DFC82C6047A62281 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
+		4336054EDE2A4352310DAB58717D70E8 /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
+		46AD5E5491B96D8D86985580382E850D /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
+		47FA97F6E17D27400774758EF4BE0427 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		5588CB14E55002ACA5DBEE3B96238581 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		5742D12ADA23AE9BA905EF5B480CC677 /* Pods-ReNest-TodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReNest-TodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		646BC3ED10251ECBEC0490B0A05642E5 /* Pods-ReNest-TodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReNest-TodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		65F3D29DB3EA5C80BABD320BCA0A228A /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
+		6D59CC6F3B33F94D5F76A8ECC0D4C0E1 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
+		6E79A273DAFA03C86103800D9BF44EDE /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
+		75ED2E1C1533359FC28C8247D17B57D6 /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spring.framework; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A1C4CDAA2A7ED432F76158EBA768DA /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		790E850661026E9CF7BD935710545051 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AD56289C8DE2A495762472E741FC2B /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
+		7B65FEA7DEC3FB7A5F2ABF92E0137952 /* Pods-ReNest-TodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReNest-TodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BEEADD8421978B37B9AAE522A1EE0F8 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		7D91CACEFB9DA5E6AC07BA02C88996A5 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		7EB11A93CA870505EDA4F53C7A3D310D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FB796D61ECE80DEE7B78EA5AD311B0 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		872E4C4C88EC0375893A7CBD0C706475 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		874BD10E4ADFFC0F4CBBFB1D7F34215A /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
+		87B32EADD0901039D1A79EA91263CD75 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
+		883C7C131C3210FE809E866ABE21CB12 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		89D36D17AC42CDF67B56862806D3A93A /* Pods-ReNest-Todo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReNest-Todo-acknowledgements.plist"; sourceTree = "<group>"; };
+		91640F4BD587FB3E017657BF3771D7BA /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CD0B544D1178645E9111310218E4F3C /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		A0644AD595F5C3C70A689E5F7FC97B65 /* Pods-ReNest-TodoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ReNest-TodoUITests.modulemap"; sourceTree = "<group>"; };
+		A1006B944B3BC33DCC0F02FDAE822963 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F7EC7766C3C224C8826B2B8D05FBBA /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
+		A7B563FB69CC62A8428918A0173E6478 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
+		AD49579D597F30D0191E298D9B873F58 /* Pods-ReNest-TodoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReNest-TodoUITests-resources.sh"; sourceTree = "<group>"; };
+		AFF4779DFF8976FDBA9DE6F23A3CB8FB /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		B4A7B7A0B8E6983BC45E4207B7BF7611 /* Pods-ReNest-Todo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReNest-Todo-frameworks.sh"; sourceTree = "<group>"; };
+		B6DEE674622A94FF0FC366DC4E6DEDD4 /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Spring.modulemap; sourceTree = "<group>"; };
+		BB0B6EB4FD12C4AA63EAE693CE87025A /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		BCD664FE6FDEC2E44E9CE1B51F5D5194 /* Pods_ReNest_Todo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReNest_Todo.framework; path = "Pods-ReNest-Todo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF863E767F20B81012808DE8E0FE8795 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
+		BFF6986BDF49B1F2AC1FBD7581656F59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32CF9B2A0DF059EA25E97D357DE4BBC /* Pods-ReNest-TodoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReNest-TodoUITests-umbrella.h"; sourceTree = "<group>"; };
+		C4F52D65FFBA482CFC9D5577C4862A88 /* Pods-ReNest-Todo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReNest-Todo-resources.sh"; sourceTree = "<group>"; };
+		C777E42A694BE470BA9EE5F3563DA33F /* Pods_ReNest_TodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReNest_TodoTests.framework; path = "Pods-ReNest-TodoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82DC668CF7C4584715BDB9AA27B15F7 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		C858D0CB0711E2FED1341FFF3D90D84F /* Pods-ReNest-Todo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReNest-Todo.debug.xcconfig"; sourceTree = "<group>"; };
+		C96E477028B2A0F34791B2B167425EEF /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
+		CC389B7822DB805D6FDD8F016B1F0EEA /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		CEE5D5069ED3F5EBA1897E0453280EF8 /* Pods-ReNest-TodoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReNest-TodoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0999236FEC4CAD910B8EA77F6FC3623 /* Pods-ReNest-Todo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReNest-Todo-umbrella.h"; sourceTree = "<group>"; };
+		D1A5C3D10B1EB50FF758C7791EF6AE0E /* Pods-ReNest-Todo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReNest-Todo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6409CE98E1F9AD4C44B35C966900BB0 /* Pods-ReNest-TodoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReNest-TodoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D6D47293A0DA1D570BB0E18AB422C30A /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		D7018A6BB9F1116E8F66025FDFDD5734 /* Pods-ReNest-TodoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReNest-TodoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC6949F2F159D7B78F33CC72B45762D0 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		DD965BD7C43D949FA4CCF61DF3EDF433 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHEXColors.framework; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC0027BB2C37E0AAE50281BFDC7EA3C /* Pods_ReNest_TodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReNest_TodoUITests.framework; path = "Pods-ReNest-TodoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7037D0366E140E1A80B4688A62E48B /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
+		E1BD5ED0EB90814FCA67412C1E2AE5AD /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
+		E55FA57D12AC749563E0C821D63E65D8 /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
+		E7E75D79F8DF48117AC579B4FF11AFC3 /* Pods-ReNest-Todo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ReNest-Todo.modulemap"; sourceTree = "<group>"; };
+		EAE45692097808B69AE9870885D93997 /* Pods-ReNest-TodoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReNest-TodoTests-frameworks.sh"; sourceTree = "<group>"; };
+		EC6B6D635C3C71B3192C57E69A4D4442 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
+		F530CDBBDE1B5754EE2E613F731253FE /* Pods-ReNest-Todo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReNest-Todo-dummy.m"; sourceTree = "<group>"; };
+		F84AC9C17138AB8CF32A31DCE40B4E5E /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12E4B2CF5B3B9A680C6E6F2074ADB1F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659F89A2146EB9C0ECE692EC32F4AB82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA8278A04853A246CBA8034105FDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA6FADBF57EFCB2789AB5823E3D1E73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9605D698715AFAD3F237D6096C7EA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA96683C57350FE48515234B0F7A7064 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E184FE59F3F19B3BFDCC1F05F15E5BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54540C19320EC5D9CAB00EA85968B617 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF550D95C83B9521DA8BF7CC7E3655A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059CCCCA12922699B234A956E98331A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11A677849077647206268CC9D54085B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD664FE6FDEC2E44E9CE1B51F5D5194 /* Pods_ReNest_Todo.framework */,
+				C777E42A694BE470BA9EE5F3563DA33F /* Pods_ReNest_TodoTests.framework */,
+				DEC0027BB2C37E0AAE50281BFDC7EA3C /* Pods_ReNest_TodoUITests.framework */,
+				75ED2E1C1533359FC28C8247D17B57D6 /* Spring.framework */,
+				DD965BD7C43D949FA4CCF61DF3EDF433 /* SwiftHEXColors.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC389A39EC57DEB700EFBC5F2E3EB13 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B80D9894E06A3C7FCD078194E14C2702 /* Pods-ReNest-Todo */,
+				B0B03C66DA98216E5E441F1787B2F291 /* Pods-ReNest-TodoTests */,
+				89A4F77102301FDF6CC160DA9B4C8C64 /* Pods-ReNest-TodoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2E4D057B06874420B7CFD15CB3EEBD7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FBDC335BEB5845531593851B055D2FE /* Spring */,
+				A2D05807E97B4829F67F31FF732F70D6 /* SwiftHEXColors */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FBDC335BEB5845531593851B055D2FE /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				2FA3416C960FCD3DC2FD699918172625 /* AsyncButton.swift */,
+				9CD0B544D1178645E9111310218E4F3C /* AsyncImageView.swift */,
+				41FB28387D490D68DFC82C6047A62281 /* AutoTextView.swift */,
+				78A1C4CDAA2A7ED432F76158EBA768DA /* BlurView.swift */,
+				87B32EADD0901039D1A79EA91263CD75 /* DesignableButton.swift */,
+				A4F7EC7766C3C224C8826B2B8D05FBBA /* DesignableImageView.swift */,
+				BF863E767F20B81012808DE8E0FE8795 /* DesignableLabel.swift */,
+				5588CB14E55002ACA5DBEE3B96238581 /* DesignableTabBarController.swift */,
+				0D62D47F2901C9BEFB4DA9D8D489518C /* DesignableTextField.swift */,
+				883C7C131C3210FE809E866ABE21CB12 /* DesignableTextView.swift */,
+				C82DC668CF7C4584715BDB9AA27B15F7 /* DesignableView.swift */,
+				AFF4779DFF8976FDBA9DE6F23A3CB8FB /* ImageLoader.swift */,
+				47FA97F6E17D27400774758EF4BE0427 /* KeyboardLayoutConstraint.swift */,
+				2303B5532A7EDB41B0A2D2903F520F32 /* LoadingView.swift */,
+				D6D47293A0DA1D570BB0E18AB422C30A /* Misc.swift */,
+				A7B563FB69CC62A8428918A0173E6478 /* SoundPlayer.swift */,
+				6D59CC6F3B33F94D5F76A8ECC0D4C0E1 /* Spring.swift */,
+				C96E477028B2A0F34791B2B167425EEF /* SpringAnimation.swift */,
+				79AD56289C8DE2A495762472E741FC2B /* SpringButton.swift */,
+				46AD5E5491B96D8D86985580382E850D /* SpringImageView.swift */,
+				DF7037D0366E140E1A80B4688A62E48B /* SpringLabel.swift */,
+				1B670D0FCFFE89C1EA72B1B80349F74E /* SpringTextField.swift */,
+				84FB796D61ECE80DEE7B78EA5AD311B0 /* SpringTextView.swift */,
+				E55FA57D12AC749563E0C821D63E65D8 /* SpringView.swift */,
+				CC389B7822DB805D6FDD8F016B1F0EEA /* TransitionManager.swift */,
+				874BD10E4ADFFC0F4CBBFB1D7F34215A /* TransitionZoom.swift */,
+				F84AC9C17138AB8CF32A31DCE40B4E5E /* UnwindSegue.swift */,
+				BFE5B7B1E08514F80DD4C74FBF3AA0AC /* Resources */,
+				655050E080FD90DDEDFE7E61D733D50E /* Support Files */,
+			);
+			name = Spring;
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		655050E080FD90DDEDFE7E61D733D50E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EB11A93CA870505EDA4F53C7A3D310D /* Info.plist */,
+				B6DEE674622A94FF0FC366DC4E6DEDD4 /* Spring.modulemap */,
+				6E79A273DAFA03C86103800D9BF44EDE /* Spring.xcconfig */,
+				1C3B3AAF308BE20B1FC6703B809633AB /* Spring-dummy.m */,
+				91640F4BD587FB3E017657BF3771D7BA /* Spring-prefix.pch */,
+				4336054EDE2A4352310DAB58717D70E8 /* Spring-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Spring";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2E4D057B06874420B7CFD15CB3EEBD7B /* Pods */,
+				11A677849077647206268CC9D54085B6 /* Products */,
+				1CC389A39EC57DEB700EFBC5F2E3EB13 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89A4F77102301FDF6CC160DA9B4C8C64 /* Pods-ReNest-TodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6986BDF49B1F2AC1FBD7581656F59 /* Info.plist */,
+				A0644AD595F5C3C70A689E5F7FC97B65 /* Pods-ReNest-TodoUITests.modulemap */,
+				D7018A6BB9F1116E8F66025FDFDD5734 /* Pods-ReNest-TodoUITests-acknowledgements.markdown */,
+				0801B8CCF123FFEEEE984A8B39A3AC58 /* Pods-ReNest-TodoUITests-acknowledgements.plist */,
+				2278EF3C450E8B328E1AB194CE2ECDEA /* Pods-ReNest-TodoUITests-dummy.m */,
+				D6409CE98E1F9AD4C44B35C966900BB0 /* Pods-ReNest-TodoUITests-frameworks.sh */,
+				AD49579D597F30D0191E298D9B873F58 /* Pods-ReNest-TodoUITests-resources.sh */,
+				C32CF9B2A0DF059EA25E97D357DE4BBC /* Pods-ReNest-TodoUITests-umbrella.h */,
+				5742D12ADA23AE9BA905EF5B480CC677 /* Pods-ReNest-TodoUITests.debug.xcconfig */,
+				7B65FEA7DEC3FB7A5F2ABF92E0137952 /* Pods-ReNest-TodoUITests.release.xcconfig */,
+			);
+			name = "Pods-ReNest-TodoUITests";
+			path = "Target Support Files/Pods-ReNest-TodoUITests";
+			sourceTree = "<group>";
+		};
+		928EA1968CCEA8151CF04E5462E2679B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				790E850661026E9CF7BD935710545051 /* Info.plist */,
+				7BEEADD8421978B37B9AAE522A1EE0F8 /* SwiftHEXColors.modulemap */,
+				7D91CACEFB9DA5E6AC07BA02C88996A5 /* SwiftHEXColors.xcconfig */,
+				65F3D29DB3EA5C80BABD320BCA0A228A /* SwiftHEXColors-dummy.m */,
+				248740559BDE5033E3E56647430F9250 /* SwiftHEXColors-prefix.pch */,
+				EC6B6D635C3C71B3192C57E69A4D4442 /* SwiftHEXColors-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHEXColors";
+			sourceTree = "<group>";
+		};
+		A2D05807E97B4829F67F31FF732F70D6 /* SwiftHEXColors */ = {
+			isa = PBXGroup;
+			children = (
+				E1BD5ED0EB90814FCA67412C1E2AE5AD /* SwiftHEXColors.h */,
+				872E4C4C88EC0375893A7CBD0C706475 /* SwiftHEXColors.swift */,
+				928EA1968CCEA8151CF04E5462E2679B /* Support Files */,
+			);
+			name = SwiftHEXColors;
+			path = SwiftHEXColors;
+			sourceTree = "<group>";
+		};
+		B0B03C66DA98216E5E441F1787B2F291 /* Pods-ReNest-TodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B233F744EE921B99C1C0A43DD7F78C7 /* Info.plist */,
+				17F1BE3E8905DAA9B24A396C27393CF5 /* Pods-ReNest-TodoTests.modulemap */,
+				CEE5D5069ED3F5EBA1897E0453280EF8 /* Pods-ReNest-TodoTests-acknowledgements.markdown */,
+				3C3CD022E1E93BC2674F0D720B52DDEC /* Pods-ReNest-TodoTests-acknowledgements.plist */,
+				03563495B3BBCD824E400FE74CF66836 /* Pods-ReNest-TodoTests-dummy.m */,
+				EAE45692097808B69AE9870885D93997 /* Pods-ReNest-TodoTests-frameworks.sh */,
+				3423A7B71E655063A28872A2584B27F8 /* Pods-ReNest-TodoTests-resources.sh */,
+				376A1AC5139A891D2F9A8948D9667E3D /* Pods-ReNest-TodoTests-umbrella.h */,
+				0257C5AB43135E31FE7236A2E3A8D03C /* Pods-ReNest-TodoTests.debug.xcconfig */,
+				646BC3ED10251ECBEC0490B0A05642E5 /* Pods-ReNest-TodoTests.release.xcconfig */,
+			);
+			name = "Pods-ReNest-TodoTests";
+			path = "Target Support Files/Pods-ReNest-TodoTests";
+			sourceTree = "<group>";
+		};
+		B80D9894E06A3C7FCD078194E14C2702 /* Pods-ReNest-Todo */ = {
+			isa = PBXGroup;
+			children = (
+				A1006B944B3BC33DCC0F02FDAE822963 /* Info.plist */,
+				E7E75D79F8DF48117AC579B4FF11AFC3 /* Pods-ReNest-Todo.modulemap */,
+				D1A5C3D10B1EB50FF758C7791EF6AE0E /* Pods-ReNest-Todo-acknowledgements.markdown */,
+				89D36D17AC42CDF67B56862806D3A93A /* Pods-ReNest-Todo-acknowledgements.plist */,
+				F530CDBBDE1B5754EE2E613F731253FE /* Pods-ReNest-Todo-dummy.m */,
+				B4A7B7A0B8E6983BC45E4207B7BF7611 /* Pods-ReNest-Todo-frameworks.sh */,
+				C4F52D65FFBA482CFC9D5577C4862A88 /* Pods-ReNest-Todo-resources.sh */,
+				D0999236FEC4CAD910B8EA77F6FC3623 /* Pods-ReNest-Todo-umbrella.h */,
+				C858D0CB0711E2FED1341FFF3D90D84F /* Pods-ReNest-Todo.debug.xcconfig */,
+				1F66A713D3AF480880592F10F610E642 /* Pods-ReNest-Todo.release.xcconfig */,
+			);
+			name = "Pods-ReNest-Todo";
+			path = "Target Support Files/Pods-ReNest-Todo";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE5B7B1E08514F80DD4C74FBF3AA0AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC6949F2F159D7B78F33CC72B45762D0 /* Images.xcassets */,
+				BB0B6EB4FD12C4AA63EAE693CE87025A /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15F705448E3725BB2865CF9EFAD3B7B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA05614431D16A9F0FD132D8666F0CDD /* Pods-ReNest-TodoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269584A40F6F21E07136381CA6A6F908 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFA176A238CE850EC79A85C2D41C956 /* Spring-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C9B0119A485C35F5B4D11C15250F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569920E706A0C31AB333F92607B4A760 /* Pods-ReNest-Todo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EC41581BE1F248A49265A2E0CD3047 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD50CA86CBE5BFCF0D256DDE34E2499 /* SwiftHEXColors-umbrella.h in Headers */,
+				D301A150EC84C610C92D9AD20FA3BAE0 /* SwiftHEXColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71F0E30317D7D4786FB06BA457E2A21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FCA06A866CBC6A2CCFFD38AE8BB012 /* Pods-ReNest-TodoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		785EE366B3846E9C22751527660205AE /* Pods-ReNest-TodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37DD728767BD58A1CF411AD4CDB70FFB /* Build configuration list for PBXNativeTarget "Pods-ReNest-TodoUITests" */;
+			buildPhases = (
+				B5A1CC9954677C5FA085EF9DF19D5212 /* Sources */,
+				4FDA8278A04853A246CBA8034105FDF5 /* Frameworks */,
+				15F705448E3725BB2865CF9EFAD3B7B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9919538B12517C75FA7A2D709310B21 /* PBXTargetDependency */,
+			);
+			name = "Pods-ReNest-TodoUITests";
+			productName = "Pods-ReNest-TodoUITests";
+			productReference = DEC0027BB2C37E0AAE50281BFDC7EA3C /* Pods_ReNest_TodoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96E93466445061B963E50F080A231A73 /* Pods-ReNest-Todo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8442C2639EFE915DCE169DB3C19A270 /* Build configuration list for PBXNativeTarget "Pods-ReNest-Todo" */;
+			buildPhases = (
+				6BD400B24A39834DB3A917159E9BE937 /* Sources */,
+				B9605D698715AFAD3F237D6096C7EA6F /* Frameworks */,
+				67C9B0119A485C35F5B4D11C15250F23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82A2FBFA65553C30D7E978C42AE09979 /* PBXTargetDependency */,
+				BC25711B4A8A400C8CAC5E4FB2798003 /* PBXTargetDependency */,
+			);
+			name = "Pods-ReNest-Todo";
+			productName = "Pods-ReNest-Todo";
+			productReference = BCD664FE6FDEC2E44E9CE1B51F5D5194 /* Pods_ReNest_Todo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		972750C2A918EE1AFCB364EB6E966089 /* Pods-ReNest-TodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF55A15C759C5806A3DC3C63DABDC0F /* Build configuration list for PBXNativeTarget "Pods-ReNest-TodoTests" */;
+			buildPhases = (
+				8BEFD7FD2D67C9DDF648D80E127D55C6 /* Sources */,
+				FF550D95C83B9521DA8BF7CC7E3655A0 /* Frameworks */,
+				C71F0E30317D7D4786FB06BA457E2A21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA2A1A7321AB21B2C25DF3339211EC76 /* PBXTargetDependency */,
+			);
+			name = "Pods-ReNest-TodoTests";
+			productName = "Pods-ReNest-TodoTests";
+			productReference = C777E42A694BE470BA9EE5F3563DA33F /* Pods_ReNest_TodoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A11A309C18EE5AC7F4893AFC27102DA3 /* Spring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B73E05F2E97EFEE0550E1CF86117F3 /* Build configuration list for PBXNativeTarget "Spring" */;
+			buildPhases = (
+				CCE078B1ADE941460040FBE2E4B6F261 /* Sources */,
+				12E4B2CF5B3B9A680C6E6F2074ADB1F9 /* Frameworks */,
+				C081EE5EB2A4271B2F368C7F529D652C /* Resources */,
+				269584A40F6F21E07136381CA6A6F908 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spring;
+			productName = Spring;
+			productReference = 75ED2E1C1533359FC28C8247D17B57D6 /* Spring.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF3CFD7A36A3D362AA67A4EABF706905 /* SwiftHEXColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A73C74CDB1BFE6EDA47A9523687369F /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
+			buildPhases = (
+				6F76D35DB23909FDECE7EFB2DADA13F5 /* Sources */,
+				E184FE59F3F19B3BFDCC1F05F15E5BE4 /* Frameworks */,
+				A5EC41581BE1F248A49265A2E0CD3047 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHEXColors;
+			productName = SwiftHEXColors;
+			productReference = DD965BD7C43D949FA4CCF61DF3EDF433 /* SwiftHEXColors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 11A677849077647206268CC9D54085B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96E93466445061B963E50F080A231A73 /* Pods-ReNest-Todo */,
+				972750C2A918EE1AFCB364EB6E966089 /* Pods-ReNest-TodoTests */,
+				785EE366B3846E9C22751527660205AE /* Pods-ReNest-TodoUITests */,
+				A11A309C18EE5AC7F4893AFC27102DA3 /* Spring */,
+				DF3CFD7A36A3D362AA67A4EABF706905 /* SwiftHEXColors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C081EE5EB2A4271B2F368C7F529D652C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B26238039845CDC46FB69B5B5578EE8 /* Images.xcassets in Resources */,
+				0C0E6AE580674608645C28E718A99470 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD400B24A39834DB3A917159E9BE937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3023E3DAB89BE02C5E5D5631607336 /* Pods-ReNest-Todo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F76D35DB23909FDECE7EFB2DADA13F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66C853F6216F15EE9F7D086EBC54329 /* SwiftHEXColors-dummy.m in Sources */,
+				0CB463DF9E2143345D89BD8861BB0883 /* SwiftHEXColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEFD7FD2D67C9DDF648D80E127D55C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3552D723A10F0C1922A6EB1D85A01E87 /* Pods-ReNest-TodoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A1CC9954677C5FA085EF9DF19D5212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54F361617FEF79A150E570D828A4B9D /* Pods-ReNest-TodoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE078B1ADE941460040FBE2E4B6F261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224E63CFCB9A767D3CBDCAE859C859B6 /* AsyncButton.swift in Sources */,
+				170B37C9B1E790E152B660C30704FA57 /* AsyncImageView.swift in Sources */,
+				BA99227D855B03663E9C692C83F6E07D /* AutoTextView.swift in Sources */,
+				4410062E678BC4BB65B856BDFADFD44E /* BlurView.swift in Sources */,
+				120A6384C2A1AC9DF17FFE5C127F6CA9 /* DesignableButton.swift in Sources */,
+				0002884C4C5BD3C3237AF1D3B8A27E2D /* DesignableImageView.swift in Sources */,
+				48EFA9D1BA25544C15650AAE312BD0B5 /* DesignableLabel.swift in Sources */,
+				ABA3FB79866536180798BAE6437CB5C5 /* DesignableTabBarController.swift in Sources */,
+				CFEF569BC9E915A48E78D1A7E32602FE /* DesignableTextField.swift in Sources */,
+				1004129DE52FEE0E429B0AEF794E07FF /* DesignableTextView.swift in Sources */,
+				C3724188B414E8B9DC3AB6D5F60830E6 /* DesignableView.swift in Sources */,
+				7AC1A75D75467132E0095F405EC48D13 /* ImageLoader.swift in Sources */,
+				D7E3434B6C95B4BC8177D4939515E1D7 /* KeyboardLayoutConstraint.swift in Sources */,
+				3D1540604F47F1547031F2B6705D290D /* LoadingView.swift in Sources */,
+				62A7951F998866136CA82C1B6C6F283A /* Misc.swift in Sources */,
+				4D938162F88B7F225EBB65D68793B266 /* SoundPlayer.swift in Sources */,
+				3514DDA8C8F6F22909F1C22E1BDB189C /* Spring-dummy.m in Sources */,
+				BCA144F66425277AF0CFD2C7575C9A62 /* Spring.swift in Sources */,
+				571713DE1B9FB81A3BCB9567CC65E2BC /* SpringAnimation.swift in Sources */,
+				81F72C042B497B6AE8E2B5373C9DA57F /* SpringButton.swift in Sources */,
+				355A40385F438A454BA7A3F5CD1ABAEA /* SpringImageView.swift in Sources */,
+				DB70E4D10449FCC4F6731EBD57FAE606 /* SpringLabel.swift in Sources */,
+				5644F3BB583E6715E998EE72DA7F974C /* SpringTextField.swift in Sources */,
+				A4DC6DDE7BD1F0EB061CB809735E0A57 /* SpringTextView.swift in Sources */,
+				CE4F3E51F731C44AC09E5A54E356C09C /* SpringView.swift in Sources */,
+				C39A708988E1CC53E6DF7544644A11B3 /* TransitionManager.swift in Sources */,
+				4193CF16A59A0CD8D0B720ACF185B88E /* TransitionZoom.swift in Sources */,
+				E746A8B33BC05FF61FC154D6BF979CA0 /* UnwindSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82A2FBFA65553C30D7E978C42AE09979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = A11A309C18EE5AC7F4893AFC27102DA3 /* Spring */;
+			targetProxy = 5ADB4286E11AC8B79A1F3BADFAEE2B7B /* PBXContainerItemProxy */;
+		};
+		A9919538B12517C75FA7A2D709310B21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ReNest-Todo";
+			target = 96E93466445061B963E50F080A231A73 /* Pods-ReNest-Todo */;
+			targetProxy = C7DBEC7B4CE9FF8C97FF2A77F2E5592C /* PBXContainerItemProxy */;
+		};
+		BC25711B4A8A400C8CAC5E4FB2798003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHEXColors;
+			target = DF3CFD7A36A3D362AA67A4EABF706905 /* SwiftHEXColors */;
+			targetProxy = 0947416198CC3A604D5286916FAAF1A2 /* PBXContainerItemProxy */;
+		};
+		FA2A1A7321AB21B2C25DF3339211EC76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ReNest-Todo";
+			target = 96E93466445061B963E50F080A231A73 /* Pods-ReNest-Todo */;
+			targetProxy = AAF0381D04536D0D94F06AE38D18CBD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		136F8F1B7F8BED1615DFE02C5842E424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E79A273DAFA03C86103800D9BF44EDE /* Spring.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				PRODUCT_MODULE_NAME = Spring;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1818489B8E652CBD0AC9206D069D1634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5742D12ADA23AE9BA905EF5B480CC677 /* Pods-ReNest-TodoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReNest-TodoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReNest-TodoUITests/Pods-ReNest-TodoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4ADC90ADF7703F67678BF5D7EA69768A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D91CACEFB9DA5E6AC07BA02C88996A5 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55548E25DA20B75756D9B018C98197D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D91CACEFB9DA5E6AC07BA02C88996A5 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BD7ECFFF190905386608650ECC0AD7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C858D0CB0711E2FED1341FFF3D90D84F /* Pods-ReNest-Todo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReNest-Todo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6E6D541C2FA9C561D0FE79B1282A563E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B65FEA7DEC3FB7A5F2ABF92E0137952 /* Pods-ReNest-TodoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReNest-TodoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReNest-TodoUITests/Pods-ReNest-TodoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		857B7FDA9E988855B8AB617C87E25F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E79A273DAFA03C86103800D9BF44EDE /* Spring.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				PRODUCT_MODULE_NAME = Spring;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9CEA96C22888BF467C8795D75A8473BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 646BC3ED10251ECBEC0490B0A05642E5 /* Pods-ReNest-TodoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReNest-TodoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReNest-TodoTests/Pods-ReNest-TodoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F1D50EF860BCF59FCA825DD3531A6E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0257C5AB43135E31FE7236A2E3A8D03C /* Pods-ReNest-TodoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReNest-TodoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReNest-TodoTests/Pods-ReNest-TodoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4AB60AC6DEAD37A63E6406D1D0CDA79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F66A713D3AF480880592F10F610E642 /* Pods-ReNest-Todo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReNest-Todo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A73C74CDB1BFE6EDA47A9523687369F /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADC90ADF7703F67678BF5D7EA69768A /* Debug */,
+				55548E25DA20B75756D9B018C98197D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37DD728767BD58A1CF411AD4CDB70FFB /* Build configuration list for PBXNativeTarget "Pods-ReNest-TodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1818489B8E652CBD0AC9206D069D1634 /* Debug */,
+				6E6D541C2FA9C561D0FE79B1282A563E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF55A15C759C5806A3DC3C63DABDC0F /* Build configuration list for PBXNativeTarget "Pods-ReNest-TodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D50EF860BCF59FCA825DD3531A6E07 /* Debug */,
+				9CEA96C22888BF467C8795D75A8473BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B73E05F2E97EFEE0550E1CF86117F3 /* Build configuration list for PBXNativeTarget "Spring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857B7FDA9E988855B8AB617C87E25F17 /* Debug */,
+				136F8F1B7F8BED1615DFE02C5842E424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8442C2639EFE915DCE169DB3C19A270 /* Build configuration list for PBXNativeTarget "Pods-ReNest-Todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD7ECFFF190905386608650ECC0AD7A /* Debug */,
+				F4AB60AC6DEAD37A63E6406D1D0CDA79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

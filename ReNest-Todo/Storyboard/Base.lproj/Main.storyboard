@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bge-Zf-rid">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ReNest-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AllTasksViewController" customModule="ReNest_Todo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="NvW-y0-XwB">
+                                <rect key="frame" x="0.0" y="135" width="375" height="677"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Coe-2S-K1d"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ljw-2f-SM7"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssN-YK-wXp" customClass="SegmentedControl" customModule="ReNest_Todo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="375" height="49"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4v-3k-pzt">
+                                        <rect key="frame" x="50" y="0.0" width="274" height="49"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d00-fC-nDd">
+                                                <rect key="frame" x="12" y="5" width="36" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                                <state key="normal" title="Tasks">
+                                                    <color key="titleColor" red="0.73725490196078436" green="0.73725490196078436" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="taskBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3k-Xf-0jZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQH-xD-pYC">
+                                                <rect key="frame" x="192" y="5" width="73" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                                <state key="normal" title="Completed">
+                                                    <color key="titleColor" red="0.73725490196078436" green="0.73725490196078436" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="completedBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdc-mT-Aqq"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-Ol-CVw">
+                                                <rect key="frame" x="14" y="47" width="33" height="2"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="274" id="J7n-hf-LFq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="x4v-3k-pzt" firstAttribute="height" secondItem="ssN-YK-wXp" secondAttribute="height" id="HlD-Vl-IN3"/>
+                                    <constraint firstItem="x4v-3k-pzt" firstAttribute="centerX" secondItem="ssN-YK-wXp" secondAttribute="centerX" id="Lv3-CL-Cjn"/>
+                                    <constraint firstAttribute="height" constant="49" id="Zc1-Fv-yDP"/>
+                                    <constraint firstItem="x4v-3k-pzt" firstAttribute="centerY" secondItem="ssN-YK-wXp" secondAttribute="centerY" id="dkj-cb-uLd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ssN-YK-wXp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="JKv-Qt-HLz"/>
+                            <constraint firstItem="NvW-y0-XwB" firstAttribute="trailing" secondItem="ssN-YK-wXp" secondAttribute="trailing" id="XWR-bI-46E"/>
+                            <constraint firstItem="ssN-YK-wXp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ai1-4T-i9a"/>
+                            <constraint firstAttribute="bottom" secondItem="NvW-y0-XwB" secondAttribute="bottom" id="dWd-wc-jxp"/>
+                            <constraint firstItem="NvW-y0-XwB" firstAttribute="top" secondItem="ssN-YK-wXp" secondAttribute="top" constant="47" id="gra-kN-Hlo"/>
+                            <constraint firstItem="NvW-y0-XwB" firstAttribute="leading" secondItem="ssN-YK-wXp" secondAttribute="leading" id="mDc-aW-YSB"/>
+                            <constraint firstItem="ssN-YK-wXp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="t1d-FZ-Zxn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ReNest" id="ba5-PN-LLG"/>
+                    <connections>
+                        <outlet property="completedBtn" destination="YQH-xD-pYC" id="l1o-5I-8uq"/>
+                        <outlet property="segmentIndicatorView" destination="UsV-Ol-CVw" id="3vI-ak-MFs"/>
+                        <outlet property="tableView" destination="NvW-y0-XwB" id="9yU-MQ-gHo"/>
+                        <outlet property="tasksBtn" destination="d00-fC-nDd" id="A8w-8z-Swq"/>
+                        <segue destination="DbX-hN-qwR" kind="show" identifier="ShowAddTask" id="PLc-H9-mbK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.00492610837438"/>
+        </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="Y8P-eo-TuL">
+            <objects>
+                <viewController id="DbX-hN-qwR" customClass="AddTaskViewController" customModule="ReNest_Todo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cyk-Ng-KjI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-ol-1DJ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="751"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DbX-hN-qwR" id="V87-RB-jjv"/>
+                                    <outlet property="delegate" destination="DbX-hN-qwR" id="bGh-zd-NDi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QA1-ol-1DJ" firstAttribute="height" secondItem="cyk-Ng-KjI" secondAttribute="height" constant="-61" id="80M-Hq-FuM"/>
+                            <constraint firstItem="QA1-ol-1DJ" firstAttribute="width" secondItem="cyk-Ng-KjI" secondAttribute="width" id="APe-A6-oob"/>
+                            <constraint firstItem="QA1-ol-1DJ" firstAttribute="centerX" secondItem="ey4-rA-X6i" secondAttribute="centerX" id="SIq-Z0-iTX"/>
+                            <constraint firstItem="QA1-ol-1DJ" firstAttribute="centerY" secondItem="ey4-rA-X6i" secondAttribute="centerY" constant="30.5" id="zQx-KF-5Id"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ey4-rA-X6i"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="QA1-ol-1DJ" id="iKm-aI-YJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QW-Ob-wxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968.8" y="127.83251231527095"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ulJ-ud-Isq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bge-Zf-rid" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a15-H8-bT8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bVV-EU-SJZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfX-rz-3VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

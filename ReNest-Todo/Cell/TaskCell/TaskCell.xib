@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="135" id="KGk-i7-Jjw" customClass="TaskCell" customModule="ReNest_Todo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cs-g5-aSz" customClass="SpringView" customModule="Spring">
+                        <rect key="frame" x="10" y="6" width="337" height="70"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FK-23-Sov">
+                                <rect key="frame" x="21" y="19" width="31" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="MOm-A3-Cq7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="Q1T-Js-MrN"/>
+                                    <constraint firstAttribute="width" constant="31" id="tzC-HN-DSn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="vpo-kV-RK7"/>
+                                </constraints>
+                                <state key="normal" image="Empty-Circle"/>
+                                <state key="selected" image="Filled-Circle"/>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NkO-6G-vPv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do a change of address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E34-XG-hNj">
+                                <rect key="frame" x="71" y="23" width="295" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="87q-FU-wP1"/>
+                                    <constraint firstAttribute="width" constant="295" id="8OY-Fz-meb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.19215686274509802" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E34-XG-hNj" firstAttribute="top" secondItem="8Cs-g5-aSz" secondAttribute="top" constant="23" id="1HE-jE-4rO"/>
+                            <constraint firstAttribute="height" constant="70" id="ARr-1q-7GX"/>
+                            <constraint firstItem="E34-XG-hNj" firstAttribute="leading" secondItem="4FK-23-Sov" secondAttribute="trailing" constant="19" id="KWv-fP-UlS"/>
+                            <constraint firstItem="E34-XG-hNj" firstAttribute="leading" secondItem="4FK-23-Sov" secondAttribute="trailing" constant="19" id="PIc-Y6-IFX"/>
+                            <constraint firstItem="E34-XG-hNj" firstAttribute="leading" secondItem="4FK-23-Sov" secondAttribute="trailing" constant="19" id="RpV-ju-4NI"/>
+                            <constraint firstItem="4FK-23-Sov" firstAttribute="top" secondItem="8Cs-g5-aSz" secondAttribute="top" constant="19" id="Vat-80-mRh"/>
+                            <constraint firstItem="E34-XG-hNj" firstAttribute="leading" secondItem="4FK-23-Sov" secondAttribute="trailing" constant="19" id="cM4-F5-bK4"/>
+                            <constraint firstItem="4FK-23-Sov" firstAttribute="leading" secondItem="8Cs-g5-aSz" secondAttribute="leading" constant="21" id="tGG-9m-LBN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8Cs-g5-aSz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="2PS-AO-amk"/>
+                    <constraint firstAttribute="bottom" secondItem="8Cs-g5-aSz" secondAttribute="bottom" constant="6.5" id="2em-Jx-7xH"/>
+                    <constraint firstAttribute="trailing" secondItem="8Cs-g5-aSz" secondAttribute="trailing" constant="9" id="Og2-aQ-3T3"/>
+                    <constraint firstItem="8Cs-g5-aSz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TcS-pi-RaW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="doneButton" destination="4FK-23-Sov" id="LJu-js-3VK"/>
+                <outlet property="taskLabel" destination="E34-XG-hNj" id="zYm-2u-bfN"/>
+                <outlet property="taskView" destination="8Cs-g5-aSz" id="6QO-su-AOp"/>
+            </connections>
+            <point key="canvasLocation" x="349" y="98.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Empty-Circle" width="31" height="31"/>
+        <image name="Filled-Circle" width="62" height="62"/>
+    </resources>
+</document>
