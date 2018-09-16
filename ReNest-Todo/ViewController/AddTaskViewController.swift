@@ -16,8 +16,8 @@ class AddTaskViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var defaults = UserDefaults.standard
     var taskArray: NSMutableArray = []
-    var managedContext: NSManagedObjectContext
-    
+    var managedContext: NSManagedObjectContext!
+
     //MARK: - Initialize
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ class AddTaskViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func addTask(priority: NSInteger, indexPath: NSInteger) {
-        let task = Task(context: managedContext)
+let task = Task(context: managedContext)
         task.title = taskArray[indexPath] as? String
         task.priority = Int16(priority)
         task.completed = false
