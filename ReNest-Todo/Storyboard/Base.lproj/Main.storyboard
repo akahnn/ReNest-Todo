@@ -60,7 +60,7 @@
                                                     <action selector="completedBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdc-mT-Aqq"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-Ol-CVw">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-Ol-CVw" customClass="SpringView" customModule="Spring">
                                                 <rect key="frame" x="14" y="47" width="33" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,7 +96,7 @@
                     <navigationItem key="navigationItem" title="ReNest" id="ba5-PN-LLG"/>
                     <connections>
                         <outlet property="completedBtn" destination="YQH-xD-pYC" id="l1o-5I-8uq"/>
-                        <outlet property="segmentIndicatorView" destination="UsV-Ol-CVw" id="3vI-ak-MFs"/>
+                        <outlet property="segmentIndicatorView" destination="UsV-Ol-CVw" id="USM-Bc-IKh"/>
                         <outlet property="tableView" destination="NvW-y0-XwB" id="9yU-MQ-gHo"/>
                         <outlet property="tasksBtn" destination="d00-fC-nDd" id="A8w-8z-Swq"/>
                         <segue destination="DbX-hN-qwR" kind="show" identifier="ShowAddTask" id="PLc-H9-mbK"/>

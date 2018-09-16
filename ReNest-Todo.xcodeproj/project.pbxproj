@@ -26,6 +26,9 @@
 		284B55A32149A5130050F703 /* AddTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284B55A12149A5130050F703 /* AddTaskCell.xib */; };
 		28BCE82A214ACAD700F09545 /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 28BCE829214ACAD700F09545 /* Avenir.ttc */; };
 		28BCE834214B15E200F09545 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCE833214B15E200F09545 /* Extensions.swift */; };
+		28F4072A214CB69A006ADA0B /* UIFont+AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F40729214CB69A006ADA0B /* UIFont+AppFonts.swift */; };
+		28F4072C214CB8D4006ADA0B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4072B214CB8D4006ADA0B /* Constants.swift */; };
+		28F4072E214CC9F4006ADA0B /* UIImage+AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4072D214CC9F4006ADA0B /* UIImage+AppImages.swift */; };
 		373D9E618234BDE60CA4344C /* Pods_ReNest_Todo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF753CA13AA4BDE599479E0 /* Pods_ReNest_Todo.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		284B55A12149A5130050F703 /* AddTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskCell.xib; sourceTree = "<group>"; };
 		28BCE829214ACAD700F09545 /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
 		28BCE833214B15E200F09545 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		28F40729214CB69A006ADA0B /* UIFont+AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFonts.swift"; sourceTree = "<group>"; };
+		28F4072B214CB8D4006ADA0B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28F4072D214CC9F4006ADA0B /* UIImage+AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AppImages.swift"; sourceTree = "<group>"; };
 		2AA35A479FD6F6A6CE5577CF /* Pods-ReNest-Todo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-Todo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-Todo/Pods-ReNest-Todo.release.xcconfig"; sourceTree = "<group>"; };
 		3E5D0F33C44812A64A07ABBA /* Pods-ReNest-TodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReNest-TodoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReNest-TodoTests/Pods-ReNest-TodoTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D6D8864FA2229F60725E622 /* Pods_ReNest_TodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReNest_TodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				284B55942148C2820050F703 /* UIColor+AppColors.swift */,
+				28F40729214CB69A006ADA0B /* UIFont+AppFonts.swift */,
+				28F4072D214CC9F4006ADA0B /* UIImage+AppImages.swift */,
+				28F4072B214CB8D4006ADA0B /* Constants.swift */,
 				28BCE833214B15E200F09545 /* Extensions.swift */,
 			);
 			path = Helpers;
@@ -475,12 +484,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				284B55A22149A5130050F703 /* AddTaskCell.swift in Sources */,
+				28F4072C214CB8D4006ADA0B /* Constants.swift in Sources */,
 				28BCE834214B15E200F09545 /* Extensions.swift in Sources */,
 				284B559D21499F170050F703 /* CoreDataStack.swift in Sources */,
+				28F4072A214CB69A006ADA0B /* UIFont+AppFonts.swift in Sources */,
 				284B55592148BC6C0050F703 /* AppDelegate.swift in Sources */,
 				284B55612148BC6C0050F703 /* ReNest_Todo.xcdatamodeld in Sources */,
 				284B558A2148BCD40050F703 /* AllTasksViewController.swift in Sources */,
 				284B55952148C2820050F703 /* UIColor+AppColors.swift in Sources */,
+				28F4072E214CC9F4006ADA0B /* UIImage+AppImages.swift in Sources */,
 				284B558F2148BFE00050F703 /* TaskCell.swift in Sources */,
 				284B559F2149A4DB0050F703 /* AddTaskViewController.swift in Sources */,
 			);
@@ -656,8 +668,9 @@
 			baseConfigurationReference = 683BE483BECEA1E543768474 /* Pods-ReNest-Todo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 793JUMAQ63;
+				DEVELOPMENT_TEAM = 687QPUTZMY;
 				INFOPLIST_FILE = "ReNest-Todo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -665,6 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-Todo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -675,8 +689,9 @@
 			baseConfigurationReference = 2AA35A479FD6F6A6CE5577CF /* Pods-ReNest-Todo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 793JUMAQ63;
+				DEVELOPMENT_TEAM = 687QPUTZMY;
 				INFOPLIST_FILE = "ReNest-Todo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -684,6 +699,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-Todo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

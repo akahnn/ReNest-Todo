@@ -9,8 +9,6 @@
 import UIKit
 import Spring
 
-let CellRadius = 5.0
-
 class TaskCell: UITableViewCell {
 
     @IBOutlet var doneButton: UIButton!
@@ -18,16 +16,14 @@ class TaskCell: UITableViewCell {
     @IBOutlet var taskView: SpringView!
 
     @IBAction func doneBtnTapped(_ sender: Any) {
-
         doneButton.isSelected = doneButton.isSelected ? false : true
-
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
         self.contentView.backgroundColor = UIColor.AppColor.App.Background
-        taskView.layer.cornerRadius = CGFloat(CellRadius)
+        taskView.layer.cornerRadius = Constants.CornerRadius.Cell
         taskView.layer.applySketchShadow(
             color: UIColor.AppColor.App.ShadowColor,
             alpha: 0.01,
@@ -35,7 +31,6 @@ class TaskCell: UITableViewCell {
             y: 9,
             blur: 9,
             spread: 0)
-
     }
 
 }
