@@ -13,7 +13,7 @@ import CoreData
 class AddTaskViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddTaskCellDelegate {
 
     @IBOutlet var tableView: UITableView!
-    
+
     var defaults = UserDefaults.standard
     var taskArray: NSMutableArray = []
     var managedContext: NSManagedObjectContext!
@@ -21,47 +21,49 @@ class AddTaskViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: - Initialize
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setDataSource()
         setUI()
         setNavBar()
     }
-    
+
     func setDataSource() {
-        if let array = defaults.object(forKey: Constants.TaskArrayKey) as? NSArray {
-            taskArray =  array.mutableCopy() as! NSMutableArray
-            tableView.reloadData()
-        } else {
+        let array: NSArray = defaults.object(forKey: Constants.TaskArrayKey) as? NSArray ?? []
+
+        if array.count == 0 {
             addDefaultTasks()
+        } else {
+            taskArray = array.mutableCopy() as! NSMutableArray
+            tableView.reloadData()
         }
     }
-    
+
     func setUI() {
         let nib = UINib.init(nibName: Constants.CellIdentifiers.AddTask, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: Constants.CellIdentifiers.AddTask)
         tableView.backgroundColor = UIColor.white
         tableView.isScrollEnabled = false
     }
-    
+
     func setNavBar() {
         navigationItem.title = "Add Task";
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.appMediumFont(19)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.App.ReNestPurple!]
         navigationController?.navigationBar.backgroundColor = UIColor.white
-        
+
         navigationItem.hidesBackButton = true
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-        
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.Back(), style: .plain, target: self, action: #selector(backBtnPressed))
         navigationItem.leftBarButtonItem?.tintColor = UIColor.AppColor.App.Icon
     }
-    
-    // MARK: - Action Handler
+
+    // MARK: - Action Handlers
     @objc func backBtnPressed() {
         navigationController?.popViewController(animated: true)
     }
-    
+
     func addTask(priority: NSInteger, indexPath: NSInteger) {
-let task = Task(context: managedContext)
+        let task = Task(context: managedContext)
         task.title = taskArray[indexPath] as? String
         task.priority = Int16(priority)
         task.completed = false
@@ -77,7 +79,8 @@ let task = Task(context: managedContext)
         }
     }
 
-    // MARK: - UITableViewDataSource
+
+    // MARK: - UITableView DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count
     }
@@ -90,16 +93,15 @@ let task = Task(context: managedContext)
         }
         cell.addBtn.tag = indexPath.row
         cell.addTaskDelegate = self
-        
+
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return Constants.CellHeight.AddTask
     }
-    
+
     // MARK: - Helper Methods
-    
     func addDefaultTasks() {
         defaults.set(Constants.DefaultTasksArray, forKey: Constants.TaskArrayKey)
         defaults.synchronize()

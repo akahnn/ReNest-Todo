@@ -9,25 +9,25 @@
 import UIKit
 
 extension UIImage {
-    
+
     class func Menu() -> UIImage? {
         return UIImage(named: "Menu")
     }
-    
+
     class func Add() -> UIImage? {
         return UIImage(named: "Add")
     }
-    
+
     class func Back() -> UIImage? {
         return UIImage(named: "Back")
     }
-    
+
     class func Plus() -> UIImage? {
         return UIImage(named: "Plus")
     }
-    
+
     class func Search() -> UIImage? {
         return UIImage(named: "Search")
     }
-    
+
 }

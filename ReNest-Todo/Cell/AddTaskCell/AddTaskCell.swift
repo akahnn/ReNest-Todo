@@ -14,11 +14,11 @@ protocol AddTaskCellDelegate {
 }
 
 class AddTaskCell: UITableViewCell {
-    
+
     @IBOutlet var taskView: UIView!
     @IBOutlet var addBtn: SpringButton!
     @IBOutlet var taskLabel: SpringLabel!
-    
+
     var priorityViewsContainer = SpringView()
     var priorityBtn = UIButton()
 
@@ -38,7 +38,7 @@ class AddTaskCell: UITableViewCell {
         addBtn.isSelected = false
         self.addTaskDelegate?.addTask(priority: sender.tag, indexPath: self.addBtn.tag)
     }
-    
+
     func slideIn() {
         addBtn.curve = "easeInOut"
         addBtn.rotate = 180
@@ -49,7 +49,7 @@ class AddTaskCell: UITableViewCell {
         priorityViewsContainer.animation = "fadeInRight"
         priorityViewsContainer.animate()
     }
-    
+
     func slideOut() {
         addBtn.curve = "easeInOut"
         addBtn.rotate = 0
@@ -75,7 +75,7 @@ class AddTaskCell: UITableViewCell {
 
     func addPriorityViews() {
         //define these or do them in xib
-        var xCor = Int(14)
+        var xCor = 14
         for i in 0..<3 {
             let priorityView = SpringView(frame: CGRect(x: xCor, y: 6, width: Int(92.5), height: 44))
             priorityView.backgroundColor = Priority.init(rawValue: i)?.color

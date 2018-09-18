@@ -14,8 +14,8 @@ extension UIColor {
     struct AppColor {
         
         struct App {
-            static let Background = UIColor(hex: 0xF4F7FA)
             static let ReNestPurple = UIColor(hex: 0x32315C)
+            static let Background = UIColor(hex: 0xF4F7FA)
             static let TaskCompleted = UIColor(hex: 0x32315C, alpha: 0.3)
             static let Icon = UIColor(hex: 0x32315C, alpha: 0.5)
             static let TickMark = UIColor(hex: 0x32315C, alpha: 0.4)

@@ -10,21 +10,82 @@ import UIKit
 import Spring
 import CoreData
 
-class AllTasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
+class AllTasksViewController: UIViewController, NSFetchedResultsControllerDelegate {
 
     // MARK: - Fetch Controllers
-     private var resultsController: NSFetchedResultsController<Task>!
-     private var completedResultsController: NSFetchedResultsController<Task>!
-     private var searchResultsController: NSFetchedResultsController<Task>!
+    var resultsController: NSFetchedResultsController<Task>!
+    var completedResultsController: NSFetchedResultsController<Task>!
+    var searchResultsController: NSFetchedResultsController<Task>!
 
     // MARK: - Properties
-    @IBOutlet private var tasksBtn: UIButton!
-    @IBOutlet private var completedBtn: UIButton!
-    @IBOutlet private var segmentIndicatorView: SpringView!
-    @IBOutlet private var tableView: UITableView!
+    @IBOutlet var tasksBtn: UIButton!
+    @IBOutlet var completedBtn: UIButton!
+    @IBOutlet var segmentIndicatorView: SpringView!
+    @IBOutlet var tableView: UITableView!
 
-    private var managedContext = CoreDataStack().managedContext
-    private let searchController = UISearchController(searchResultsController: nil)
+    var managedContext = CoreDataStack().managedContext
+    let searchController = UISearchController(searchResultsController: nil)
+
+    // MARK: - Overrides
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let nib = UINib.init(nibName: Constants.CellIdentifiers.Task, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: Constants.CellIdentifiers.Task)
+        setUI()
+        setNavBar()
+        setSearchBar()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        fetchTasks()
+        fetchCompletedTasks()
+    }
+
+
+    // MARK: - Initialize
+    func setUI() {
+        tasksBtn.isSelected = true
+        self.tableView.backgroundColor = UIColor.AppColor.App.Background
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+    }
+
+    func setSearchBar() {
+
+        // -- Setup Search Controller --
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        searchController.obscuresBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
+
+
+        let searchBar = navigationItem.searchController?.searchBar
+        searchBar?.searchBarStyle = .default
+        if let textfield = searchBar?.value(forKey: "searchField") as? UITextField {
+            UISearchBar.appearance().setImage(UIImage.Search(), for: .search, state: .normal)
+            textfield.layer.cornerRadius = 18;
+            textfield.layer.masksToBounds = true
+            textfield.font = UIFont.appBookFont(14)
+            textfield.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [NSAttributedStringKey.font: UIFont.appBookFont(14)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.App.SearchText!])
+        }
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes([NSAttributedStringKey.font: UIFont.appBookFont(14)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.Segment.Selected!], for: .normal)
+
+    }
+
+    func setNavBar() {
+        // -- Setup Navigation Bar --
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.appBlackFont(19)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.App.ReNestPurple!]
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.Menu(), style: .plain, target: self, action: #selector(menuBtnPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.Add(), style: .plain, target: self, action: #selector(addBtnPressed))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor.AppColor.App.Icon
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.AppColor.App.Icon
+    }
 
     // MARK: - Action Handlers
     @objc func addBtnPressed() {
@@ -64,85 +125,10 @@ class AllTasksViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
 
-    // MARK: - Overrides
-    override func viewDidAppear(_ animated: Bool) {
-        fetchTasks()
-        fetchCompletedTasks()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-//        resultsController = nil
-//        completedResultsController.dein
-//        searchResultsController = nil
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let nib = UINib.init(nibName: Constants.CellIdentifiers.Task, bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: Constants.CellIdentifiers.Task)
-        setUI()
-        setNavBar()
-        setSearchBar()
-    }
-
-    // MARK: - Init
-    func setUI() {
-        tasksBtn.isSelected = true
-        self.tableView.backgroundColor = UIColor.AppColor.App.Background
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-    }
-
-    func setSearchBar() {
-        
-        // -- Setup Search Controller --
-        navigationItem.searchController = searchController
-        searchController.obscuresBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        navigationItem.hidesSearchBarWhenScrolling = false
-        
-        let searchBar = navigationItem.searchController?.searchBar
-        searchBar?.searchBarStyle = .default
-        if let textfield = searchBar?.value(forKey: "searchField") as? UITextField {
-            UISearchBar.appearance().setImage(UIImage.Search(), for: .search, state: .normal)
-            textfield.layer.cornerRadius = 18;
-            textfield.layer.masksToBounds = true
-            textfield.font = UIFont.appBookFont(14)
-            textfield.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [NSAttributedStringKey.font: UIFont.appBookFont(14)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.App.SearchText!])
-        }
-        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes([NSAttributedStringKey.font: UIFont.appBookFont(14)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.Segment.Selected!], for: .normal)
-        
-    }
-    
-    func setNavBar() {
-        // -- Setup Navigation Bar --
-        navigationController?.navigationBar.barTintColor = UIColor.white
-        navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.appBlackFont(19)!, NSAttributedStringKey.foregroundColor: UIColor.AppColor.App.ReNestPurple!]
-
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.Menu(), style: .plain, target: self, action: #selector(menuBtnPressed))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.Add(), style: .plain, target: self, action: #selector(addBtnPressed))
-        navigationItem.leftBarButtonItem?.tintColor = UIColor.AppColor.App.Icon
-        navigationItem.rightBarButtonItem?.tintColor = UIColor.AppColor.App.Icon
-    }
-
     //MARK: - CoreData
-    func fetchCompletedTasks() {
-        if (completedResultsController == nil) {
-            completedResultsController = self.resultsController(request: Task.completedFetchRequest, sectionNameKeyPath: nil) as! NSFetchedResultsController<Task>
-            completedResultsController.delegate = self
-        }
-        do {
-            try completedResultsController.performFetch()
-            tableView.reloadDataAnimated()
-        } catch {
-            print("Perform fetch error: \(error)")
-        }
-    }
-
     func fetchTasks() {
-        if (resultsController == nil) {
-            resultsController = self.resultsController(request: Task.incompletedFetchRequest, sectionNameKeyPath: "priority") as! NSFetchedResultsController<Task>
+        if resultsController == nil {
+            resultsController = self.resultsController(request: Task.incompletedFetchRequest, sectionNameKeyPath: "priority") as? NSFetchedResultsController<Task>
             resultsController.delegate = self
         }
         do {
@@ -153,99 +139,22 @@ class AllTasksViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
 
-    // MARK: - UITableViewDataSource
-
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: Int(self.view.frame.width), height: Int(Constants.HeaderHeight.WithTitle)))
-        view.applyGradient(colours: [UIColor.AppColor.App.ReNestPurple!, UIColor.AppColor.App.Background!], alpha: 0.04)
-
-        if isFiltering() || tasksBtn.isSelected {
-
-            var titleIndex = resultsController.sectionIndexTitles[section]
-            if isFiltering() {
-                titleIndex = searchResultsController.sectionIndexTitles[section]
-            }
-
-            let priorityTitleIndex: Int? = Int(titleIndex)
-            let headerText = Priority.init(rawValue: priorityTitleIndex!)?.description as NSString?
-            
-            let headerTitle = UILabel(frame: Constants.sectionViewHeaderTitleFrame)
-            headerTitle.font = UIFont.appMediumFont(12)
-            headerTitle.textColor = Priority.init(rawValue: priorityTitleIndex!)?.color
-            headerTitle.text = headerText?.uppercased
-            view.addSubview(headerTitle)
+    func fetchCompletedTasks() {
+        if completedResultsController == nil {
+            completedResultsController = self.resultsController(request: Task.completedFetchRequest, sectionNameKeyPath: nil) as? NSFetchedResultsController<Task>
+            completedResultsController.delegate = self
         }
-        
-        return view
-    }
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        if isFiltering() {
-            return searchResultsController?.sections?.count ?? 0
-        } else if tasksBtn.isSelected {
-            return resultsController?.sections?.count ?? 0
-        } else if completedBtn.isSelected {
-            return completedResultsController?.sections?.count ?? 0
-        }
-        
-        return 0
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isFiltering() {
-            return searchResultsController.sections?[section].numberOfObjects ?? 0
-        } else if tasksBtn.isSelected {
-            return resultsController.sections?[section].numberOfObjects ?? 0
-        } else if completedBtn.isSelected {
-            return completedResultsController.sections?[section].numberOfObjects ?? 0
-        }
-        
-        return 0
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let task: Task
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.Task) as! TaskCell
-        cell.taskLabel.textColor = UIColor.AppColor.App.ReNestPurple
-        cell.doneButton.isSelected = false
-        cell.doneButton.isUserInteractionEnabled = true
-        cell.doneButton.addTarget(self, action: #selector(doneBtnTapped), for: .touchUpInside)
-
-        if isFiltering() {
-            task = searchResultsController.object(at: indexPath)
-            cell.taskLabel.text = task.title
-        }
-        else if tasksBtn.isSelected {
-            task = resultsController.object(at: indexPath)
-            cell.taskLabel.text = task.title
-        }
-        else if completedBtn.isSelected {
-            task = completedResultsController.object(at: indexPath)
-            cell.taskLabel.textColor = UIColor.AppColor.App.TaskCompleted
-            cell.taskLabel.attributedText = task.title!.strikeThrough()
-            cell.doneButton.isSelected = true
-            cell.doneButton.isUserInteractionEnabled = false
-        }
-
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Constants.CellHeight.Task
-    }
-
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if (completedBtn.isSelected) {
-            return Constants.HeaderHeight.WithOutTitle
-        }
-        else {
-            return Constants.HeaderHeight.WithTitle
+        do {
+            try completedResultsController.performFetch()
+            tableView.reloadDataAnimated()
+        } catch {
+            print("Perform fetch error: \(error)")
         }
     }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == Constants.SegueIdentifiers.AddTask) {
+        if segue.identifier == Constants.SegueIdentifiers.AddTask {
             let vc = segue.destination as? AddTaskViewController
             vc?.managedContext = managedContext
         }
@@ -264,7 +173,7 @@ class AllTasksViewController: UIViewController, UITableViewDataSource, UITableVi
 
             let request: NSFetchRequest<Task> = Task.sortedFetchRequest
             request.predicate = NSPredicate(format: "title CONTAINS[c] %@ && completed == %@", text!, NSNumber(booleanLiteral: false))
-            searchResultsController = self.resultsController(request: request, sectionNameKeyPath: "priority") as! NSFetchedResultsController<Task>
+            searchResultsController = self.resultsController(request: request, sectionNameKeyPath: "priority") as? NSFetchedResultsController<Task>
             searchResultsController.delegate = self
 
             do {
@@ -294,7 +203,7 @@ class AllTasksViewController: UIViewController, UITableViewDataSource, UITableVi
             cacheName: nil
         ) as! NSFetchedResultsController<NSFetchRequestResult>
     }
-    
+
     func animateIndicatorView(button: UIButton) {
         button.isSelected = true
         segmentIndicatorView.curve = "easeIn"
@@ -304,4 +213,109 @@ class AllTasksViewController: UIViewController, UITableViewDataSource, UITableVi
         segmentIndicatorView.animateTo()
     }
 
+}
+
+extension AllTasksViewController: UITableViewDelegate, UITableViewDataSource {
+    // MARK: - UITableView DataSource
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: Int(self.view.frame.width), height: Int(Constants.HeaderHeight.WithTitle)))
+        view.applyGradient(colours: [UIColor.AppColor.App.ReNestPurple!, UIColor.AppColor.App.Background!], alpha: 0.04)
+
+        if isFiltering() || tasksBtn.isSelected {
+
+            var titleIndex = resultsController.sectionIndexTitles[section]
+            if isFiltering() {
+                titleIndex = searchResultsController.sectionIndexTitles[section]
+            }
+
+            let priorityTitleIndex: Int? = Int(titleIndex)
+            let headerText = Priority.init(rawValue: priorityTitleIndex!)?.description as NSString?
+
+            let headerTitle = UILabel(frame: Constants.sectionViewHeaderTitleFrame)
+            headerTitle.font = UIFont.appMediumFont(12)
+            headerTitle.textColor = Priority.init(rawValue: priorityTitleIndex!)?.color
+            headerTitle.text = headerText?.uppercased
+            view.addSubview(headerTitle)
+        }
+
+        return view
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if isFiltering() {
+            return searchResultsController?.sections?.count ?? 0
+        } else if tasksBtn.isSelected {
+            return resultsController?.sections?.count ?? 0
+        } else if completedBtn.isSelected {
+            return completedResultsController?.sections?.count ?? 0
+        }
+
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering() {
+            return searchResultsController.sections?[section].numberOfObjects ?? 0
+        } else if tasksBtn.isSelected {
+            return resultsController.sections?[section].numberOfObjects ?? 0
+        } else if completedBtn.isSelected {
+            return completedResultsController.sections?[section].numberOfObjects ?? 0
+        }
+
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let task: Task?
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.Task) as! TaskCell
+        cell.taskLabel.textColor = UIColor.AppColor.App.ReNestPurple
+        cell.doneButton.isSelected = false
+        cell.doneButton.isUserInteractionEnabled = true
+        cell.doneButton.addTarget(self, action: #selector(doneBtnTapped), for: .touchUpInside)
+
+        if isFiltering() {
+            task = searchResultsController.object(at: indexPath)
+            cell.taskLabel.text = task?.title
+        }
+        else if tasksBtn.isSelected {
+            task = resultsController.object(at: indexPath)
+            cell.taskLabel.text = task?.title
+        }
+        else if completedBtn.isSelected {
+            task = completedResultsController.object(at: indexPath)
+            cell.taskLabel.textColor = UIColor.AppColor.App.TaskCompleted
+            cell.taskLabel.attributedText = task?.title?.strikeThrough()
+            cell.doneButton.isSelected = true
+            cell.doneButton.isUserInteractionEnabled = false
+        }
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return Constants.CellHeight.Task
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if completedBtn.isSelected {
+            return Constants.HeaderHeight.WithOutTitle
+        }
+        else {
+            return Constants.HeaderHeight.WithTitle
+        }
+    }
+}
+
+extension AllTasksViewController: UISearchBarDelegate {
+    // MARK: - UISearchBar Delegate
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchBar.text!)
+    }
+}
+
+extension AllTasksViewController: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }

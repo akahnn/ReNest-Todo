@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		284B55552148BC6C0050F703 /* ReNest-Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReNest-Todo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		284B55552148BC6C0050F703 /* ReNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284B55582148BC6C0050F703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284B555D2148BC6C0050F703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		284B55602148BC6C0050F703 /* ReNest_Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReNest_Todo.xcdatamodel; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		284B55562148BC6C0050F703 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				284B55552148BC6C0050F703 /* ReNest-Todo.app */,
+				284B55552148BC6C0050F703 /* ReNest.app */,
 				284B556C2148BC6D0050F703 /* ReNest-TodoTests.xctest */,
 				284B55772148BC6D0050F703 /* ReNest-TodoUITests.xctest */,
 			);
@@ -287,7 +287,7 @@
 			);
 			name = "ReNest-Todo";
 			productName = "ReNest-Todo";
-			productReference = 284B55552148BC6C0050F703 /* ReNest-Todo.app */;
+			productReference = 284B55552148BC6C0050F703 /* ReNest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		284B556B2148BC6D0050F703 /* ReNest-TodoTests */ = {
@@ -677,7 +677,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-Todo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ReNest;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -698,7 +698,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kahn.ReNest-Todo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ReNest;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
